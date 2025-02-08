@@ -71,8 +71,7 @@ Steps to test:
 - after successful session start you will be asked to select player for playback
 
 What happens in the background:
-- binding to Ace Stream Engine service is needed to start engine (if it's not started) and obtain port numbers to use engine via API
-- after successful binding client (this sample app) receives two ports: one for accessing Engine API (default port is 62062) and one for accessing HTTP API (default is 6878)
+- binding to Ace Stream Engine service is needed to start engine (if  (this sample app) receives two ports: one for accessing Engine API (default port is 62062) and one for accessing HTTP API (default is 6878)
 - this sample app uses HTTP API to start playback session (please refer to code for details: ``AceStreamClientExample.startSession()``
 - when session is started client receives playback URL: it can be now passed to any video player for playback. Playback URL is valid as long as session is alive (until session is explicitly stopped, or stopped by inactivity timeout, or engine is stopped).
 - sample app uses intent with playback URL and "video/\*" data type to ask user to choose player
